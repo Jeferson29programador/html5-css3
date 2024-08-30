@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Estados do Brasil</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+          
+        h1{
+            text-align: center;
+        }
+        table {
+           
+            width: 450px;
+            border-collapse: collapse;
+            position: relative;
+            margin: auto;
+        }
+
+       caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
+       }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            text-align: left;
+        } 
+        th#direita{
+            text-align: right;
+           width: 50px;
+        }
+        thead > tr> th{
+            position:sticky;
+           top: -1px;
+           background-color: #383838;
+        }
+
+        thead,tfoot {
+            background-color: rgb(78, 78, 78);
+            color: white;
+        }
+        tbody > tr:nth-child(even){/*even e par 2n ou qunatos vc quiser*/
+        background-color: lightgrey;
+        }
+        tbody > tr:nth-child(odd){/*2n-1 e impar(odd*/
+            background-color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+    Anatomia para tabelas grandes 
+    table
+    caption
+    thead (cabeça)
+        tr,td,th
+    tbody(corpo)
+        tr,td,th
+    tfoot(rodape)
+        tr,td,th
+
+    tr(linha)
+    td(dados)
+    th(texto)
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead><!--cabeça-->
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" id="direita">População</th>
+            </tr>
+            <!-- scope = col e para mostrar para o html e no sistema de busca
+             do navegador que os dados estao na 
+             coluna ou melhor dizendo embaixo dele(th(titulo))
+             e se for row e que os dados estao na mesma linha -->
+        </thead>
+        <tbody><!--corpo-->
+            <tr>
+                <td>Acre</td>
+                <td class="num">892.698</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.761.194</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">861.773</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.331.037</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.365.161</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.387.029</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.335.931</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.701.667</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.636.504</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.141.155</td>
+            </tr>
+            <tr>
+                <td>Mat Grosso</td>
+                <td class="num">3.737.573</td>
+            </tr>
+            <tr>
+                <td>Mat Grosso do Sul</td>
+                <td class="num">2.825.759</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.477.660</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.305.817</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.568.387</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.449.195</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.303.188</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.624.237</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.226.317</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">2.029.244</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">667.697</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.409.550</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.352.217</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.668.954</td>
+            </tr>
+        </tbody>
+        <tfoot><!--rodapé-->
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>230.084.622</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
