@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coração Pulsante</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6f2;
+            /* Fundo rosa claro */
+            overflow: hidden;
+        }
+
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 50px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(-45deg);
+            }
+        }
+
+        .heart-falling {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #f1072e;
+            /* Cor mais clara */
+            transform: rotate(-45deg);
+            animation: fall 5s infinite;
+        }
+
+        .heart-falling::before,
+        .heart-falling::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #f1072e;
+            /* Cor mais clara */
+            border-radius: 50%;
+        }
+
+        .heart-falling::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart-falling::after {
+            top: 0;
+            left: 10px;
+        }
+
+        @keyframes fall {
+            0% {
+                top: 0;
+                opacity: 1;
+            }
+
+            100% {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart"></div> <!-- Coração no meio da tela pulsando -->
+    <!-- Criação de vários corações pequenos caindo por toda a tela -->
+    <script>
+        for (let i = 0; i < 100; i++) {
+            const heart = document.createElement('div');
+            heart.classList.add('heart-falling');
+            heart.style.left = `${Math.random() * 100}%`;
+            heart.style.animationDelay = `${Math.random() * 5}s`;
+            document.body.appendChild(heart);
+        }
+    </script>
+</body>
+
+</html>
