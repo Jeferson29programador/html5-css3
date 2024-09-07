@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+h1{
+    /*box-level*/
+    background-color: rgba(56, 58, 58, 0.664);
+    height: 300px;
+    width: 300px;
+
+    /*border-width: 10px;
+    border-style: groove;
+    border-color: aqua;
+    border-radius: 10px;*/
+
+  border: 10px groove aqua ; /*simplificado*/
+
+    /*margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    margin-left: 10px;*/
+    margin: 10px auto 50px auto ;
+
+    /*cima(top),direita(right),baixo(bottom),baixo(left)*/
+    
+    /*outline-width: 5px;
+    outline-style: dashed;
+    outline-color: brown;*/
+    
+    outline: 5px dashed brown;
+    /*display inline faz ficar na linha */
+    
+}
+  
+    /* inline level*/
+    a{
+    display: block;/*ocupa uma linha inteira*/
+    border: 5px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    }
+    a:active{
+    color: black;
+    }
+    a:visited{
+    color: aqua;
+    }

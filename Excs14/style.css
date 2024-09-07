@@ -1,0 +1,97 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; /*tamalho da fonte 2m tamanho padrão*/
+    font-weight: bolder; /*negrito*/
+    font-style: italic;/*italico*/
+    text-decoration: underline;/*sublinhado ou com linha 
+    em baixo*/
+    text-align: left;
+
+    /*shorthand font
+    -font style ->fonte weight ->font size ->fonte family
+    */
+}
+/* @font-face{
+    font-family:;
+    src: url("love larry.otf")format("opentype"),
+    url("love larry.ttf") format("truetype");
+
+}
+tipos de format()
+-opentype(otf)
+-truetype(ttf)
+-embedded-opentype
+-truetype-aat(Apple Advanced Typography)
+-svg
+
+isso se usa caso seja usado uma fonte que não seja do google fonts e se usa no url o nome do arquivo  baixado de outro size da sua escolha ou do cliente*/
+
+h1{
+    text-align: center;
+
+}
+h2{
+    text-align: center;/*centralizado o texto*/
+
+}
+h2#principal{
+   color: brown;
+
+}
+.intermediario{
+    background-color: aqua;
+
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+   
+}
+div{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+   box-shadow: 10px 10px 10px;
+  
+}
+div:hover{
+    transition: 2s;
+    background-image: linear-gradient(black,red) ;
+   color: rgb(0, 204, 255);
+   
+   
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    text-decoration: underline;
+    color: burlywood;
+}
+a:active{
+    color: blue;
+}
+a::before{
+    content: "[link]";
+    text-decoration: none;
+    font-weight: normal;
+    color: chartreuse;
+}
+a::after{
+    content: "[link]";
+    text-decoration: none;
+    font-weight: normal;
+    color: chartreuse;
+}
