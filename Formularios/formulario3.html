@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario3</title>
+  
+</head>
+
+<body>
+    <h1>Tste de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="nome">Nome:</label>
+            <input type="text" name="inome" id="nome" autocomplete="name" required maxlength="30"
+                placeholder="nome completo">
+        </p>
+
+        <p><label for="media">Media</label>
+            <input type="number" name="num" id="media" min="0" max="10" placeholder="0 a 10" required step="0.1"
+                value="5">
+        </p><!--step para notas com 0.5-->
+
+        <p><label for="dia">Dia da Prova</label>
+            <input type="date" name="dis" id="dia" value="2004-10-29" required>
+        </p>
+
+        <p><label for="mes">Periodo Letivo</label>
+            <input type="month" name="ime" id="mes" value="2022-07" required>
+        </p>
+
+        <p><label for="horaprova">Hora da Prova</label>
+        <input type="time" name="hora" id="horadaprova" required value="00:00"></p>
+        <p>
+
+            <p><label for="telefone">Telefone</label>
+            in</p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>

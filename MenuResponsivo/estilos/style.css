@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body,
+html {
+
+    background-color: lightgrey;
+    
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+
+
+}
+i#burguer{
+    display: block;
+    background-color: rgb(48,48,48);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;  
+}
+
+i#burguer{
+    background-color: white;
+    color: black;
+}
+
+header>h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+menu {
+    display: none;
+}
+
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+menu>ul>li>a:hover {
+    background-color: gray;
+}
+
+main {
+    width: 90vw;
+    background-color: rgba(255, 255, 255, 0.281);
+    text-align: justify;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url(../imagens/back-pc.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+article>h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+article>p {
+    
+    margin-bottom: 20px;
+    text-indent: 20px;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+
+footer {
+    width: 90vw;
+    padding: 10px;
+    text-align: center;
+    background-color: darkgrey;
+    margin: auto;
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+footer:hover {
+    background-color: rgba(87, 87, 87);
+    padding-top: 15px;
+    transition: .1s;
+}
+
+footer>p>a:hover {
+    color: white;
+    text-decoration: underline;
+
+}

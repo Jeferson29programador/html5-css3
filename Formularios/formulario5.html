@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="castro.php" method="get">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sx" id="sexomas"  value="masculino">
+
+            <label for="sexomas">Masculino</label><br>
+            
+            <input type="radio" name="sx" id="sexofe" checked  value="feminino">
+
+            <label for="sexofe">Feminino</label><br>
+            
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" name="fut" id="futebol" checked>
+            <label for="futebol">futebol</label><br>
+            
+            <input type="checkbox" name="bas" id="basquete">
+            <label for="basquete">Basquete</label><br>
+            
+            <input type="checkbox" name="ten" id="tenis">
+            <label for="tenis">Tenis</label> <br>
+            
+            <input type="checkbox" name="vol" id="volley">
+            <label for="volley">Volei</label> <br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>

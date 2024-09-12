@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">Cadastrar</a>
+                    <a href="#">Login</a>
+                    <a href="#">Ajuda</a>
+                </li>
+            </ul>
+        </menu>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Query</h2>
+            <p>A tecnologia está em constante evolução, e um dos campos que mais avançou nas últimas décadas é a
+                computação. Desde a invenção dos primeiros computadores, que ocupavam salas inteiras e eram utilizados
+                principalmente para cálculos matemáticos complexos, até os smartphones e dispositivos móveis que temos
+                hoje, a transformação tem sido rápida e significativa. A miniaturização dos componentes e a melhoria dos
+                circuitos integrados permitiram que dispositivos com enorme poder de processamento cabem na palma da
+                mão. Hoje, temos acesso a informações em tempo real, conectividade global e uma infinidade de
+                aplicativos que tornam nossas vidas mais produtivas e conectadas. Esse avanço contínuo traz novas
+                oportunidades e desafios, exigindo adaptação constante de indivíduos e empresas.
+            </p>
+            <p>A tecnologia está em constante evolução, e um dos campos que mais avançou nas últimas décadas é a
+                computação. Desde a invenção dos primeiros computadores, que ocupavam salas inteiras e eram utilizados
+                principalmente para cálculos matemáticos complexos, até os smartphones e dispositivos móveis que temos
+                hoje, a transformação tem sido rápida e significativa. A miniaturização dos componentes e a melhoria dos
+                circuitos integrados permitiram que dispositivos com enorme poder de processamento cabem na palma da
+                mão. Hoje, temos acesso a informações em tempo real, conectividade global e uma infinidade de
+                aplicativos que tornam nossas vidas mais produtivas e conectadas. Esse avanço contínuo traz novas
+                oportunidades e desafios, exigindo adaptação constante de indivíduos e empresas.
+            </p>
+            <p>A tecnologia está em constante evolução, e um dos campos que mais avançou nas últimas décadas é a
+                computação. Desde a invenção dos primeiros computadores, que ocupavam salas inteiras e eram utilizados
+                principalmente para cálculos matemáticos complexos, até os smartphones e dispositivos móveis que temos
+                hoje, a transformação tem sido rápida e significativa. A miniaturização dos componentes e a melhoria dos
+                circuitos integrados permitiram que dispositivos com enorme poder de processamento cabem na palma da
+                mão. Hoje, temos acesso a informações em tempo real, conectividade global e uma infinidade de
+                aplicativos que tornam nossas vidas mais produtivas e conectadas. Esse avanço contínuo traz novas
+                oportunidades e desafios, exigindo adaptação constante de indivíduos e empresas.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Criado por <a href="#">Jeferson Alves</a></p>
+    </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+                
+            } 
+            else{
+                itens.style.display = 'none'
+               
+            }
+
+        }
+    </script>
+</body>
+
+</html>

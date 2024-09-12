@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 6</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="casdastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" name="icor" id="Cor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="nivel">Nivel de Satisfação</label>
+            <input type="range" name="inivel" id="nivel" min="1" max="10" value="10">
+        </p>
+
+        <p>
+            <label for="foto">Foto do perfil:</label>
+            <input type="file" src="ifoto" alt="foto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
